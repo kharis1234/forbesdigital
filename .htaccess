@@ -1,0 +1,13 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\?*$ index.php?r=$1 [L,QSA]
+RewriteCond %{HTTP_HOST} ^www\.hjtserviceac\.com$ [NC]
+RewriteRule ^(.*)$ http://hjtserviceac.com/$1 [R=301,L]
+
+
+Options All -Indexes
+</IfModule>

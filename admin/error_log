@@ -1,0 +1,34 @@
+[07-Sep-2017 11:23:48 Asia/Jakarta] PHP Fatal error:  Class 'common\models\identitas' not found in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 39
+[07-Sep-2017 11:23:55 Asia/Jakarta] PHP Fatal error:  Class 'common\models\halamanstatis' not found in /home/hjtservi/public_html/backend/controllers/HalamanstatisController.php on line 39
+[07-Sep-2017 11:24:49 Asia/Jakarta] PHP Fatal error:  Class 'common\models\layanan' not found in /home/hjtservi/public_html/backend/controllers/LayananController.php on line 39
+[07-Sep-2017 11:25:19 Asia/Jakarta] PHP Fatal error:  Class 'common\models\daftarharga' not found in /home/hjtservi/public_html/common/models/searchdaftarharga.php on line 14
+[07-Sep-2017 11:26:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '.', expecting identifier (T_STRING) or function (T_FUNCTION) or const (T_CONST) or \\ (T_NS_SEPARATOR) in /home/hjtservi/public_html/backend/controllers/DaftarhargaController.php on line 6
+[07-Sep-2017 11:29:06 Asia/Jakarta] PHP Fatal error:  Class 'common\models\identitas' not found in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 39
+[07-Sep-2017 11:29:46 Asia/Jakarta] PHP Fatal error:  Class 'common\models\daftarharga' not found in /home/hjtservi/public_html/common/models/searchdaftarharga.php on line 14
+[07-Sep-2017 11:30:51 Asia/Jakarta] PHP Fatal error:  Class 'common\models\daftarharga' not found in /home/hjtservi/public_html/common/models/searchdaftarharga.php on line 14
+[07-Sep-2017 11:33:07 Asia/Jakarta] PHP Fatal error:  Class 'app\models\daftarharga' not found in /home/hjtservi/public_html/common/models/searchdaftarharga.php on line 14
+[07-Sep-2017 11:33:30 Asia/Jakarta] PHP Fatal error:  Class 'common\models\gallery' not found in /home/hjtservi/public_html/backend/controllers/GalleryController.php on line 41
+[07-Sep-2017 11:34:21 Asia/Jakarta] PHP Fatal error:  Class 'common\models\identitas' not found in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 39
+[07-Sep-2017 11:36:58 Asia/Jakarta] PHP Fatal error:  Class 'common\models\identitas' not found in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 39
+[07-Sep-2017 11:37:54 Asia/Jakarta] PHP Fatal error:  Class 'public_html\common\models\identitas' not found in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 39
+[07-Sep-2017 11:38:30 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '.', expecting ',' or ';' in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 6
+[07-Sep-2017 11:39:19 Asia/Jakarta] PHP Fatal error:  Class 'home\hjtservi\public_html\common\models\identitas' not found in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 39
+[07-Sep-2017 11:39:33 Asia/Jakarta] PHP Fatal error:  Class 'home\hjtservi\public_html\common\models\identitas' not found in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 39
+[07-Sep-2017 11:43:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '/', expecting identifier (T_STRING) or function (T_FUNCTION) or const (T_CONST) or \\ (T_NS_SEPARATOR) in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 6
+[07-Sep-2017 11:43:31 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '.', expecting identifier (T_STRING) in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 6
+[07-Sep-2017 11:43:50 Asia/Jakarta] PHP Fatal error:  Class 'common\models\identitas' not found in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 39
+[07-Sep-2017 11:45:04 Asia/Jakarta] PHP Fatal error:  Class 'backend\models\identitas' not found in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 39
+[07-Sep-2017 11:45:30 Asia/Jakarta] PHP Fatal error:  Class 'yii\backend\models\identitas' not found in /home/hjtservi/public_html/backend/controllers/IdentitasController.php on line 39
+[07-Sep-2017 11:48:02 Asia/Jakarta] PHP Fatal error:  Class 'common\models\artikel' not found in /home/hjtservi/public_html/common/models/searchartikel.php on line 14
+[07-Sep-2017 11:50:05 Asia/Jakarta] PHP Fatal error:  Class 'common\models\artikel' not found in /home/hjtservi/public_html/common/models/searchartikel.php on line 14
+[07-Sep-2017 11:50:33 Asia/Jakarta] PHP Fatal error:  Class 'common\models\halamanstatis' not found in /home/hjtservi/public_html/backend/controllers/HalamanstatisController.php on line 39
+[07-Sep-2017 11:51:05 Asia/Jakarta] PHP Fatal error:  Class 'common\models\gallery' not found in /home/hjtservi/public_html/backend/controllers/GalleryController.php on line 41
+[07-Sep-2017 11:51:40 Asia/Jakarta] PHP Fatal error:  Class 'common\models\daftarharga' not found in /home/hjtservi/public_html/common/models/searchdaftarharga.php on line 14
+[07-Sep-2017 11:52:26 Asia/Jakarta] PHP Fatal error:  Class 'common\models\daftarharg' not found in /home/hjtservi/public_html/common/models/searchdaftarharga.php on line 44
+[07-Sep-2017 11:59:18 Asia/Jakarta] PHP Fatal error:  Call to a member function saveAs() on null in /home/hjtservi/public_html/backend/controllers/ArtikelController.php on line 106
+[07-Sep-2017 11:59:40 Asia/Jakarta] PHP Fatal error:  Call to a member function saveAs() on null in /home/hjtservi/public_html/backend/controllers/ArtikelController.php on line 106
+[07-Sep-2017 12:28:35 Asia/Jakarta] PHP Fatal error:  Call to a member function where() on null in /home/hjtservi/public_html/backend/controllers/ArtikelController.php on line 42
+[07-Sep-2017 12:29:00 Asia/Jakarta] PHP Fatal error:  Call to a member function where() on null in /home/hjtservi/public_html/backend/controllers/ArtikelController.php on line 42
+[07-Sep-2017 12:43:42 Asia/Jakarta] PHP Fatal error:  Call to a member function saveAs() on null in /home/hjtservi/public_html/backend/controllers/ArtikelController.php on line 79
+[07-Sep-2017 12:44:29 Asia/Jakarta] PHP Fatal error:  Call to a member function saveAs() on null in /home/hjtservi/public_html/backend/controllers/ArtikelController.php on line 79
+[07-Sep-2017 13:11:15 Asia/Jakarta] PHP Fatal error:  Call to a member function saveAs() on null in /home/hjtservi/public_html/backend/controllers/GalleryController.php on line 103
