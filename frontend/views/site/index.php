@@ -1,404 +1,499 @@
-<?php
-
-
-
+<?php 
 use yii\helpers\Html;
-use yii\helpers\Url;
-use yii\widgets\ListView;
-
 ?>
-
-<div role="main" class="main">
-
-    <div class="slider-container light rev_slider_wrapper">
-        <div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 500, 'disableProgressBar': 'on'}">
-            <ul>
-
-                <li data-transition="fade">
-
-                    <img src="<?=Url::to(['/']) ?>img/slides/slide-corporate-1.jpg"
-                         alt=""
-                         data-bgposition="right center"
-                         data-bgpositionend="center center"
-                         data-bgfit="cover"
-                         data-bgrepeat="no-repeat"
-                         data-kenburns="on"
-                         data-duration="9000"
-                         data-ease="Linear.easeNone"
-                         data-scalestart="110"
-                         data-scaleend="100"
-                         data-rotatestart="0"
-                         data-rotateend="0"
-                         data-offsetstart="0 0"
-                         data-offsetend="0 0"
-                         data-bgparallax="0"
-                         class="rev-slidebg">
-
-                    <div class="tp-caption featured-label"
-                         data-x="center"
-                         data-y="210"
-                         data-start="500"
-                         style="z-index: 5"
-                         data-transform_in="y:[100%];s:500;"
-                         data-transform_out="opacity:0;s:500;">SELAMAT DATANG</div>
-
-                    <div class="tp-caption bottom-label"
-                         data-x="center"
-                         data-y="270"
-                         data-start="1000"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:600;e:Power4.easeInOut;"
-                         data-transform_out="opacity:0;s:500;"
-                         data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                         data-splitin="chars"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         style="font-size: 23px; line-height: 30px;"
-                         data-elementdelay="0.05">HAPARAN JAYA TEKNIK AC</div>
-
-                </li>
-                <li data-transition="fade">
-
-                    <img src="<?=Url::to(['/']) ?>img/slides/slide-corporate-3.jpg"
-                         alt=""
-                         data-bgposition="center center"
-                         data-bgfit="cover"
-                         data-bgrepeat="no-repeat"
-                         data-kenburns="on"
-                         data-duration="9000"
-                         data-ease="Linear.easeNone"
-                         data-scalestart="150"
-                         data-scaleend="100"
-                         data-rotatestart="0"
-                         data-rotateend="0"
-                         data-offsetstart="0 0"
-                         data-offsetend="0 0"
-                         data-bgparallax="0"
-                         class="rev-slidebg">
-
-                    <div class="tp-caption"
-                         data-x="177"
-                         data-y="188"
-                         data-start="1000"
-                         data-transform_in="x:[-300%];opacity:0;s:500;"><img src="<?=Url::to(['/']) ?>img/slides/slide-title-border-light.png" alt=""></div>
-
-                    <div class="tp-caption top-label"
-                         data-x="227"
-                         data-y="180"
-                         data-start="500"
-                         data-transform_in="y:[-300%];opacity:0;s:500;">JASA SERVIS/MAINTENANCE</div>
-
-                    <div class="tp-caption"
-                         data-x="530"
-                         data-y="188"
-                         data-start="1000"
-                         data-transform_in="x:[300%];opacity:0;s:500;"><img src="<?=Url::to(['/']) ?>img/slides/slide-title-border-light.png" alt=""></div>
-
-                    <div class="tp-caption main-label"
-                         data-x="135"
-                         data-y="210"
-                         data-start="1500"
-                         data-whitespace="nowrap"
-                         data-transform_in="y:[100%];s:500;"
-                         data-transform_out="opacity:0;s:500;"
-                         data-mask_in="x:0px;y:0px;">SOLUSI NYA ADA PADA KAMI!?</div>
-
-                    <div class="tp-caption bottom-label"
-                         data-x="185"
-                         data-y="280"
-                         data-start="2000"
-                         data-transform_in="y:[100%];opacity:0;s:500;"> HARAPAN JAYA TEKNIK AC selau siap memberikan harga dan pelayanan terbaik.</div>
-
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div style="margin-bottom: 30px;" id="home-intro">
-
-    </div>
-
-    <div class="container">
-
-        <div class="row center">
-            <div class="col-md-12">
-                <h1 class="mb-sm word-rotator-title">
-                    Anda Butuh Jasa Servis & Bongkar Pasang AC untuk
-                    <strong class="inverted">
-									<span class="word-rotate" data-plugin-options="{'delay': 2000, 'animDelay': 300}">
-										<span class="word-rotate-items">
-											<span>Rumah</span>
-											<span>Kantor</span>
-											<span>Pabrik</span>
-											<span>Kantor</span>
-											<span>Sekolah</span>
-											<span>Instansi</span>
-											<span>Dll?</span>
-										</span>
-									</span>
-                    </strong>
-
-                </h1>
-                <p class="lead">
-                    Kami siap datang membantu anda. Hubungi kami untuk mendapatkan penawaran spesial.
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <div class="container">
-
-        <div class="row">
-            <hr class="tall">
-        </div>
-
-    </div>
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-8">
-                <h2>Layanan <strong>Kami</strong></h2>
-                <div class="row">
-                    <div class="col-sm-6">
-
-                        <?php
-                        $layanan = \common\models\Layanan::find() ->where(['IN', 'id_layanan', [1,2,3,4]])->all();
-
-                        ?>
-
-                        <?php foreach ($layanan as $layanan) { ?>
-                            <div class="feature-box">
-                                <div class="feature-box-icon">
-                                    <i class="fa fa-cogs"></i>
-                                </div>
-                                <div class="feature-box-info">
-                                    <h4 class="heading-primary mb-none"><?=$layanan->judul ?></h4>
-                                    <p class="tall"><?=$layanan->isi_layanan ?></p>
-                                </div>
-                            </div>
-
-                        <?php } ?>
-
-                    </div>
-                    <div class="col-sm-6">
-                        <?php
-                        $layanan2 = \common\models\Layanan::find() ->where(['IN', 'id_layanan', [5,6,7,8]])->all();
-
-                        ?>
-
-                        <?php foreach ($layanan2 as $layanan2) { ?>
-                            <div class="feature-box">
-                                <div class="feature-box-icon">
-                                    <i class="fa fa-cogs"></i>
-                                </div>
-                                <div class="feature-box-info">
-                                    <h4 class="heading-primary mb-none"><?=$layanan2->judul ?></h4>
-                                    <p class="tall"><?=$layanan2->isi_layanan ?></p>
-                                </div>
-                            </div>
-
-                        <?php } ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                </br></br></br>
-
-                <div class="panel-group" id="accordion">
-                    <?php
-                    $halamanstatis=\common\models\Halamanstatis::find()->where(['IN', 'id_halaman', [64,66]])->all();
-
-                    ?>
-
-
-                    <?php   foreach ($halamanstatis as $halamanstatis){     ?>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#<?=$halamanstatis->url?>">
-                                        <i class="fa fa-bars"></i>
-                                        <?=$halamanstatis->judul?>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="<?=$halamanstatis->url?>" class="accordion-body collapse <?=$halamanstatis->type?>">
-                                <div class="panel-body">
-                                    <?=$halamanstatis->isi_halaman?></br></br>
-                                    <a href="tentangkami" target="_parent" title="Facebook">Detail</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    <?php  } ?>
-
-
-
-
-                </div>
-            </div>
-        </div>
-
-        <hr class="tall">
-
-        <div class="row center">
-            <div class="col-md-12">
-                <h2 class="mb-sm word-rotator-title">
-                    Jasa Service AC
-                    <strong>
-									<span class="word-rotate" data-plugin-options="{'delay': 3500, 'animDelay': 400}">
-										<span class="word-rotate-items">
-											<span>Terbaik</span>
-											<span>Berpengalaman</span>
-											<span>Terpercaya</span>
-											<span>Bergaransi</span>
-										</span>
-									</span>
-                    </strong>
-                    se-Jabodetabek
-                </h2>
-                <h4 class="heading-primary lead tall"> Berikut adalah Merk AC Populer yang digunakan oleh konsumen dan juga telah ditangani oleh teknisi AC Harapan Jaya Teknik</h4>
-            </div>
-        </div>
-
-        <div class="row center">
-            <div class="owl-carousel owl-theme" data-plugin-options="{'items': 6, 'autoplay': true, 'autoplayTimeout': 3000}">
-                <div>
-                    <img class="img-responsive" src="<?=Url::to(['/']) ?>img/logos/logo-1.png" alt="">
-                </div>
-                <div>
-                    <img class="img-responsive" src="<?=Url::to(['/']) ?>img/logos/logo-2.png" alt="">
-                </div>
-                <div>
-                    <img class="img-responsive" src="<?=Url::to(['/']) ?>img/logos/logo-3.png" alt="">
-                </div>
-                <div>
-                    <img class="img-responsive" src="<?=Url::to(['/']) ?>img/logos/logo-4.png" alt="">
-                </div>
-                <div>
-                    <img class="img-responsive" src="<?=Url::to(['/']) ?>img/logos/logo-5.png" alt="">
-                </div>
-                <div>
-                    <img class="img-responsive" src="<?=Url::to(['/']) ?>img/logos/logo-6.png" alt="">
-                </div>
-                <div>
-                    <img class="img-responsive" src="<?=Url::to(['/']) ?>img/logos/logo-4.png" alt="">
-                </div>
-                <div>
-                    <img class="img-responsive" src="<?=Url::to(['/']) ?>img/logos/logo-2.png" alt="">
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <section class="section section-custom-map">
-        <section class="section section-default section-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="recent-posts mb-xl">
-                            <h2>Artikel <strong>Terakhir</strong> </h2>
-                            <div class="row">
-                                <div class="owl-carousel owl-theme mb-none" data-plugin-options="{'items': 1}">
-
-                                    <div>
-
-                                        <?php foreach(common\models\Artikel::lastArtikelIndexpage1() as $artikel): ?>
-                                            <div class="col-md-6">
-                                                <article>
-                                                    <div class="date">
-                                                        <span class="day"> <?=date('d', strtotime($artikel->tanggal))?></span>
-                                                        <span class="month"> <?=date('M', strtotime($artikel->tanggal))?></span>
-                                                    </div>
-                                                    <h4 class="heading-primary"><?= Html::a($artikel->judul  , ['view', 'id' => $artikel->id_artikel]) ?></h4>
-                                                    <p><?=substr($artikel->isi_artikel, 0, 100)
-                                                        ?>
-                                                        <?= Html::a('Detail <i class="fa fa-angle-right"></i>' , ['view', 'id' => $artikel->id_artikel], ['class' => 'read-more']) ?>
-
-
-                                                    </p>
-                                                </article>
-                                            </div>
-                                        <?php endforeach; ?>
-
-
-
-
-                                    </div>
-                                    <div>
-                                        <?php foreach(common\models\Artikel::lastArtikelIndexpage2() as $artikel): ?>
-                                            <div class="col-md-6">
-                                                <article>
-                                                    <div class="date">
-                                                        <span class="day"><?=date('d', strtotime($artikel->tanggal))?></span>
-                                                        <span class="month"><?=date('M', strtotime($artikel->tanggal))?></span>
-                                                    </div>
-                                                    <h4 class="heading-primary"><?= Html::a($artikel->judul  , ['view', 'id' => $artikel->id_artikel]) ?></h4>
-                                                    <p><?=substr($artikel->isi_artikel, 0, 100)
-                                                        ?>
-                                                        <?= Html::a('Detail <i class="fa fa-angle-right"></i>' , ['view', 'id' => $artikel->id_artikel], ['class' => 'read-more']) ?>
-
-
-                                                    </p>
-                                                </article>
-                                            </div>
-                                        <?php endforeach; ?>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h2><strong>Apa</strong> Kata Mereka</h2>
-                        <div class="row">
-                            <div class="owl-carousel owl-theme mb-none" data-plugin-options="{'items': 1}">
-                                <div>
-                                    <div class="col-md-12">
-                                        <div class="testimonial testimonial-primary">
-                                            <blockquote>
-                                                <p>Respon cepat, berpengalaman, menjelaskan semua proses dari bagian mana yang bermasalah, penyebab dan lama pengerjaan. AC sudah kembali dingin.</p>
-                                            </blockquote>
-                                            <div class="testimonial-arrow-down"></div>
-                                            <div class="testimonial-author">
-                                                <div class="testimonial-author-thumbnail img-thumbnail">
-                                                    <img src="<?=Url::to(['/']) ?>img/clients/client-1.jpg" alt="">
-                                                </div>
-                                                <p><strong>Ibu Rika</strong><span>Pengguna Jasa Service AC</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="col-md-12">
-                                        <div class="testimonial testimonial-primary">
-                                            <blockquote>
-                                                <p>Saya selalu khawatir setiap service AC karena ketidakjujuran teknisi yang sering mengakali freon. Tapi kali ini teknisi menceritakan kondisi AC dengan jujur (freon stabil tidak perlu tambah). Terima kasih!.</p>
-                                            </blockquote>
-                                            <div class="testimonial-arrow-down"></div>
-                                            <div class="testimonial-author">
-                                                <div class="testimonial-author-thumbnail img-thumbnail">
-                                                    <img src="<?=Url::to(['/']) ?>img/clients/client-2.jpg" alt="">
-                                                </div>
-                                                <p><strong>Bapak Sigit</strong><span>Pengguna Jasa Cuci AC</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-
+<section class="cover height-90 imagebg text-center" data-overlay="2" id="home">
+	<div class="background-image-holder">
+		<img alt="background" src="<?php echo Yii::getAlias('@imageurl/landing-10.jpg'); ?>"/>
+	</div>
+	<div class="container pos-vertical-center">
+		<div class="row">
+			<div class="col-md-12">
+				 <img alt="" class="unmarg--bottom" src="<?php echo Yii::getAlias('@imageurl/logoforbes.png'); ?>" width="400">
+				<h1 style="color:#f7941d;font-weight:400;font-size:80px;">
+				  Buliding Indonesia's </br>
+				  E-conomy
+				</h1>
+				
+			</div>
+		</div>
+		<!--end of row-->
+	</div>
+	<!--end of container-->
+</section> 
+          
+<section class="text-center" style="background-color:#f7941d;padding-top:3em;padding-bottom:3em;">
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 col-12">
+			<div class="feature" >
+				 <span class="h5 radial__label" style="color:white;font-weight:900;margin-bottom:10px;">WHEN</span>
+				<center> <div style="width:10%;border-bottom: 2px solid white;margin-bottom:7px;"></div></center>
+				<p class="h4" style="color:white;font-weight:900;">
+				   October 1, 2018
+				</p>
+			</div>
+		</div>
+		<div class="col-md-4 col-12">
+			<div class="feature" style="border-right: 2px solid white;border-left: 2px solid white;">
+				 <span class="h5 radial__label" style="color:white;font-weight:900;margin-bottom:10px;">WHERE</span>
+				<center> <div style="width:10%;border-bottom: 2px solid white;margin-bottom:7px;"></div></center>
+				<p class="h4" style="color:white;font-weight:900;">
+				   Fairmont Jakarta
+				</p>
+			</div>
+		</div>
+		<div class="col-md-4 col-12" >
+		   <div class="feature" >
+				 <span class="h5 radial__label" style="color:white;font-weight:900;margin-bottom:10px;">SOCIAL</span>
+				<center> <div style="width:10%;border-bottom: 2px solid white;margin-bottom:7px;"></div></center>
+													  <p class="h4" style="color:white;font-weight:900;">
+				   #fidigital conference
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--end of row-->
 </div>
-
+<!--end of container-->
+</section>
 			
-	
-	
+			  <section class="switchable bg--secondary text-center" id="about">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-md-12 col-lg-7">
+                             <center>    <h2 style="font-weight:800;">About This Event</h2>
+							 	 <div style="width:10%;border-bottom: 2px solid #f7941d;margin-bottom:5px;"></div></br></center>
+                            <p class="lead">
+                              Forbes Indonesia has always been of the highest quality, therefore this
+multimedia event will be positioned as the pre-eminent competition to
+empower Indonesia’s and Southeast Asia’s Internet community.
+                            </p>
+                            <p class="lead">
+                               The concept is simple, a competition to allow the region’s best startups
+to gain well-deserved recognition. Those selected to participate will gain
+valuable exposure, and a branding opportunity for themselves, as well as
+networking opportunities at the event with Asia’s leading tech experts,
+conventional corporation looking at digital transformation and investors.
+The winners of the competition will be listed on the Forbes’ list of the
+region next promising startups.
+                            </p>
+							
+							 <div class="bar__module">
+                               <?php echo Html::a('<span class="btn__text">APPLY COMPETITION</span>', ['/registration'], ['class'=>'btn btn--sm type--uppercase']); ?>
+                                <?php echo Html::a('<span class="btn__text">RESERVATION</span>', ['/reservation'], ['class'=>'btn btn--sm btn--primary type--uppercase']); ?>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+			
+			
+			  <section class="bg--secondary" style="padding-bottom: 4em;padding-top:6em; background:#26223e;" id="speakers">
+                <div class="container">
+				 <div class="row">
+                        <div class="col-md-12">
+                             <center>    <h2 style="font-weight:800;color:white;">Meet Our Speakers</h2>
+							 	 <div style="width:10%;border-bottom: 2px solid #f7941d;margin-bottom:5px;"></div></br></center>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-block">
+							  
+                            <center>    <h4 style="color:white;width:60%;"><span style="color:#ddc700;background-color:#1e1e1e99;line-height: 1.7em;">Tem que parunt. Equod quam ea comnihicil id essunt aliquo conseceped l in
+eaque perunt ut et peles estotaq uatiuntum essimint et offic tecti.</span></h4></center>
+                             </div>
+                        </div>
+                    </div>
+					
+
+					 <div class="col-md-12">
+                            <div class="slider" data-arrows="true" data-paging="true">
+                                <ul class="slides">
+                                    <li class="col-lg-3 col-md-12 col-12">                               		 
+									<div class="feature  text-center">
+										  <img style="border-radius:50%;" alt="Image" src="<?php echo Yii::getAlias('@imageurl/user1.jpg'); ?>" />
+										<span class="h4 color--primary" style="font-weight:800;margin-bottom: 0.2em;">Rocky Gerung</span>
+										<span class="h5" style="margin-bottom: 0.7em;color:#fff;font-style:italic;">Co - Founder</span>
+										<span  style="font-weight:200;color:#fff;font-size:15px;">Bukalapak.com</span>
+									</div>                 
+                                    </li>
+                                    <li class="col-lg-3 col-md-12 col-12">
+                                      <div class="feature  text-center">
+                                      <img style="border-radius:50%;" alt="Image" src="<?php echo Yii::getAlias('@imageurl/user1.jpg'); ?>" />
+                                    <span class="h4 color--primary" style="font-weight:800;margin-bottom: 0.2em;">Farhat Abbas</span>
+									<span class="h5" style="margin-bottom: 0.7em;color:#fff;font-style:italic;">Co - Founder</span>
+									<span  style="font-weight:200;color:#fff;font-size:15px;">Bukalapak.com</span>
+                                </div>
+                                    </li>
+                                    <li class="col-lg-3 col-md-12 col-12">
+                                      <div class="feature  text-center">
+                                      <img style="border-radius:50%;" alt="Image" src="<?php echo Yii::getAlias('@imageurl/user1.jpg'); ?>" />
+                                    <span class="h4 color--primary" style="font-weight:800;margin-bottom: 0.2em;">Rudiantara</span>
+									<span class="h5" style="margin-bottom: 0.7em;color:#fff;font-style:italic;">Co - Founder</span>
+									<span  style="font-weight:200;color:#fff;font-size:15px;">Bukalapak.com</span>
+                                </div>
+                                    </li>
+                                    <li class="col-lg-3 col-md-12 col-12">
+                                     <div class="feature  text-center">
+                                      <img style="border-radius:50%;" alt="Image" src="<?php echo Yii::getAlias('@imageurl/user1.jpg'); ?>" />
+                                    <span class="h4 color--primary" style="font-weight:800;margin-bottom: 0.2em;">Dahlia Kumala</span>
+									<span class="h5" style="margin-bottom: 0.7em;color:#fff;font-style:italic;">Co - Founder</span>
+									<span  style="font-weight:200;color:#fff;font-size:15px;">Bukalapak.com</span>
+                                </div>
+                                    </li>
+									
+							 <li class="col-lg-3 col-md-12 col-12">
+                                       <div class="feature  text-center">
+                                      <img style="border-radius:50%;" alt="Image" src="<?php echo Yii::getAlias('@imageurl/user1.jpg'); ?>" />
+                                    <span class="h4 color--primary" style="font-weight:800;margin-bottom: 0.2em;">Ahmad Roberto</span>
+									<span class="h5" style="margin-bottom: 0.7em;color:#fff;font-style:italic;">Co - Founder</span>
+									<span  style="font-weight:200;color:#fff;font-size:15px;">Bukalapak.com</span>
+                                </div>
+                                  </li>
+                                </ul>
+                            </div>
+                        </div>
+               
+					</br></br>
+					
+					
+					
+                </div>
+                <!--end of container-->
+            </section>
+			
+			 <section class="imagebg" style="padding-bottom:0em;padding-top:0em;background-color:#e27a28;" id="agenda">
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6" style="padding-right: 0px;padding-left: 0px;">
+                            <div class="boxed boxed--lg border--round " style="margin-bottom:0px;border-radius:0px;padding-top:100px;padding-bottom:100px;background-image: url('http://localhost/forbes/vendor/bower/frontend/img/construction-2.jpg');">
+							
+                                <div class="col-lg-10 col-md-12 mx-auto">
+                                        <h2 style="font-weight:800;">Agenda</h2>
+							 	 <div style="width:10%;border-bottom: 2px solid #f7941d;margin-bottom:5px;"></div></br>
+                                    <p >
+                                        <span style="color:#fff;"> Hosted at notable universities
+									throughout the city, the 2017
+									Under 30 Summit delivered 5
+									dedicated programming tracks. The
+									Tech, Create, Capital, Impact, and
+									Discover Stages offered distinct
+									programming, so attendees could
+									engage with the content that’s most
+									relevant to them.
+                                    </span></p>
+                                    
+                                    <p class="lead">
+                                       <span style="color:#fff;">  Breakup session
+										and matchmaking is
+										available during the
+										entire event. </span>
+                                    </p>
+									 <a class="btn btn--sm btn--primary type--uppercase" href="#" style="background-color:#26223e;border-color:#26223e;">
+                                    <span class="btn__text" style="color:white;">
+                                        ADD TO YOUR GOOGLE CALENDARS
+                                    </span>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+						 <div class="col-md-6 col-lg-6" style="background-color:#e27a28;padding-right: 0px;padding-left: 0px;">
+                               <div class="boxed boxed--lg border--round " style="margin-bottom:0px;border-radius:0px;padding-top:40px;padding-bottom:40px;background-color:#e27a28;">
+							
+                                <div class="col-lg-12 col-md-12 mx-auto">
+                                       
+                                       <div class="slider" data-paging="true">
+                        <ul class="slides">
+                            <li class="col-md-12 col-12">
+                           
+                            <ul class=" text-center">
+                                <li style="margin-bottom: 20px;">
+                                 <span style="font-size: 20px;font-weight: 700;color:white;">  08.30 </span> </br>
+                                   Guest Arrival
+
+                                </li>
+                               <li style="margin-bottom: 20px;">
+                                     <span style="font-size: 20px;font-weight: 700;color:white;">  09.00 </span> </br>
+                                   Event start, opening by Forbes Indonesia
+                                </li>
+                              <li style="margin-bottom: 20px;">
+                                   <span style="font-size: 20px;font-weight: 700;color:white;">  09.05 </span> </br>
+                                   
+                                   Opening keynote plus intro remarks
+                                </li>
+                               <li style="margin-bottom: 20px;">
+                                 <span style="font-size: 20px;font-weight: 700;color:white;">  09.15 </span> </br>
+                               Keynote Speaker: </br>
+                                     <span style="font-size: 20px;font-weight: 700;color:white;">  Rudiantara </span> </br>
+                                   Minister of Communication and Information Technology
+                                </li>
+                                 <li style="margin-bottom: 20px;">
+                                     <span style="font-size: 20px;font-weight: 700;color:white;">  09.35 </span> </br>
+                                     <span style="font-size: 20px;font-weight: 700;color:white;">  First Session: </span> </br>
+                                   “Unlocking Traditional Financing”
+                                </li>
+                               
+                            </ul>
+                        
+                                <!--end feature-->
+                            </li>
+                             <li class="col-md-12 col-12">
+                              <ul class=" text-center">
+                              
+                                 <li style="margin-bottom: 20px;">
+                                     <span style="font-size: 20px;font-weight: 700;color:white;">  10.45 </span> </br>
+                                     <span style="font-size: 20px;font-weight: 700;color:white;">  Second Session: </span> </br>
+                                   “Making the Next Unicorn”
+                                </li>
+                                <li style="margin-bottom: 20px;">
+                                    <span style="font-size: 20px;font-weight: 700;color:white;">  12.00 </span> </br>
+                                   Lunch
+                                </li>
+                            </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <!--end slider-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+			    
+			
+			 <section class="switchable bg--secondary text-center">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-md-12 col-lg-7">
+						
+                           <center>    <h2 style="font-weight:800;">Digital Conference</h2>
+							 	 <div style="width:10%;border-bottom: 2px solid #f7941d;margin-bottom:5px;"></div></br></center>
+                            <p class="lead">
+                               Aligent laborem ium apellantiunt utenimo luptatiorro et quos reicab id
+mintibus volupta sitio omnimi, ommod quiberundae niet volor auteseque
+comnimu saniet re eum cus porunt illaborro quiaestiissi ut est fuga. Everi
+dolorrovid ut porisit, berum, esciaspedi quaturit alitate sim inulluptia
+dolest, consequiamIditatento cone con exceaqui accum fugiassim
+estiorit accus ducipsa pernam eic tem is solor simin es aborro Aligent
+laborem ut porisit, berum, esciaspedi quaturit alitate sim inulluptia dolest,
+consequiamIditatento cone con exceaqui accum fugiassim estiorit accus
+ducipsa pernam eic tem is solor simin es aborro
+                            </p>
+							<h4 style="font-weight:800;color:#f7941d;">Who Should Come</h4>
+                            <p class="lead">
+                               Startups, venture capital & investment company,
+conventional corporations like banks, manufacturing
+and service companies looking into digital
+transformation.
+                            </p>
+							
+							 <div class="bar__module">
+                               <?php echo Html::a('<span class="btn__text">Reserved Now</span>', ['/reservation'], ['class'=>'btn btn--sm btn--primary type--uppercase']); ?>
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+			
+		    <section id="about" class="switchable parallax imagebg height-100" style="padding-top:2em;">
+                <div class="background-image-holder">
+                    <img alt="background" src="<?php echo Yii::getAlias('@imageurl/drone-2.jpg'); ?>" />
+                </div>
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                          <div class="col-md-12 text-center">
+                            <div class="switchable__text">
+                               <center>    <h2 style="font-weight:800;">Startup Competition</h2>
+							 	 <div style="width:10%;border-bottom: 2px solid #f7941d;margin-bottom:5px;"></div></br></center>
+                                <p class="lead" >
+                                  <span style="color:#ddc700;background-color:#00000080;"> Aligent laborem ium apellantiunt utenimo luptatiorro et quos reicab id
+								mintibus volupta sitio omnimi, ommod quiberundae niet volor auteseque
+								comnimu saniet re eum cus porunt illaborro quiaestiissi ut est fuga. Everi
+								dolorrovid ut porisit, berum, esciaspedi quaturit alitate sim inulluptia
+								dolest, consequiamIditatento cone con exceaqui accum fugiassim
+								estiorit accus ducipsa pernam eic tem is solor simin es aborro Aligent
+								laborem ut porisit, berum, esciaspedi quaturit alitate sim inulluptia dolest,
+								consequiamIditatento cone con exceaqui accum fugiassim estiorit accus
+								ducipsa pernam eic tem is solor simin es aborro </span>
+                                </p>
+                                <h4 style="font-weight:800;color:#f7941d;">Eligibility</h4>
+                                <p class="lead" >
+                                   <span style="color:#ddc700;background-color:#00000080;">All companies must be already operating for 2 to 3 years, and already
+									passed Series A round of investment or already obtained Series B round.
+									Other data required will be shareholder data, legal address and domicile,
+									biodata on founders, and other criteria
+                               </span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+			 <section class="text-center" style="padding-bottom: 4em;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <h4 style="font-weight:800;color:#f7941d;">The Growth-stage Competition</h4>
+                            <p class="lead">
+                               The Growth Stage competition of the Digital Conference will be designed
+								to showcase the very best in local Indonesian and regional Internet startup
+								talent. To that end, the competition will be divided in stages:
+                            </p>
+							
+							   <div class="row">
+                        <div class="col-md-4">
+                            <a href="#" class="block">
+                                <div class="feature boxed  border--round text-center">
+                                       <img src="<?php echo Yii::getAlias('@imageurl/s1.png'); ?>" width="90%;">
+                                    <span class="h5 color--primary" style="margin-bottom: 0.2em;">Stage 1</span>
+									<span class="h4" style="font-weight:800;color:#26223e;">Call for Entries</span>
+									 <p >
+								Any startup matching the
+								criteria are eligible to enter,
+								using a simple online entry
+								process, within the entry
+								period.
+                            </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="block">
+                                <div class="feature boxed  border--round text-center">
+                                       <img src="<?php echo Yii::getAlias('@imageurl/s2.png'); ?>" width="90%;">
+                                    <span class="h5 color--primary" style="margin-bottom: 0.2em;">Stage 2</span>
+									<span class="h4" style="font-weight:800;color:#26223e;">Screening</span>
+									<p >
+										Startups will be screened and the top entries allowed to go to the next stage
+									</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="block">
+                                <div class="feature boxed border--round text-center">
+								
+                                    <img src="<?php echo Yii::getAlias('@imageurl/s3.png'); ?>" width="90%;">
+                                    <span class="h5 color--primary" style="margin-bottom: 0.2em;">Stage 3</span>
+									<span class="h4" style="font-weight:800;color:#26223e;">Awards</span>
+									 <p >
+										The finale of each contest is
+										the awarding of prizes to the
+										winning startups, before an
+										audience and panel of experts.
+										Forbes Indonesia will provide
+                            </p>
+                                </div>
+                            </a>
+                        </div>
+                      
+                     
+                    </div>
+                    <!--end of row-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+					
+                </div>
+				
+               
+            </section>
+
+			<section style="padding-bottom: 0em;">
+                <div class="container pos-vertical-center">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="wizard bg--white">
+                               
+                                <h5><font style="color:#26223e;font-weight:800;font-size:16px;">Submission</font></br>
+								<font style="color:#f7941d;font-weight:800;font-size:13px;">April 1 - July 31, 2018</font></h5>
+								
+                                <section class="text-center">
+                                   
+                                </section>
+                                <h5><font style="color:#26223e;font-weight:800;font-size:16px;">Selection Process</font></br>
+								<font style="color:#f7941d;font-weight:800;font-size:13px;">August 1 - September 30, 2018</font></h5>
+                                <section class="text-center">
+                                   
+                                </section>
+                                <h5><font style="color:#26223e;font-weight:800;font-size:16px;">Awarding</font></br>
+								<font style="color:#f7941d;font-weight:800;font-size:13px;">October 1, 2018</font></h5>
+                                <section class="text-center">
+                                   
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <!--end of container-->
+            </section>
+			 <section class="switchable bg--secondary text-center" style="padding-bottom: 6em;padding-top:2em;border-top: 1px solid #fff;background:white;">
+                <div class="container">
+                     <!--end of row-->
+					 <div class="row justify-content-around">
+                        <div class="col-md-12 col-lg-7">               
+							 <div class="bar__module">
+
+                                <?php echo Html::a('<span class="btn__text">DOWNLOAD FORM</span>', ['/reservation'], ['class'=>'btn btn--sm btn--primary type--uppercase']); ?> 
+
+                                <?php echo Html::a('<span class="btn__text">APPLY COMPETITION</span>', ['/registration'], ['class'=>'btn btn--sm type--uppercase']); ?>
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+			 <section class="text-center imagebg parallax" data-overlay="4">
+                <div class="background-image-holder">
+                    <img alt="background" src="<?php echo Yii::getAlias('@imageurl/nonprofit-5.jpg'); ?>" />
+                </div>
+                <div class="container">
+					<div class="row">
+                        <div class="col-md-12">
+                             <center>    <h2 style="font-weight:800;">Sign up to our newsletter</h2>
+							 	 </center>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                              <form class="row justify-content-center" action="//mrare.us8.list-manage.com/subscribe/post?u=77142ece814d3cff52058a51f&amp;id=f300c9cce8" data-success="Thanks for signing up.  Please check your inbox for a confirmation email." data-error="Please provide your email address and agree to the terms.">
+                                         <div class="col-md-12 text-center">
+                                            <input style="border-radius: 20px;width:50%;background: #f5f5f500;" class="validate-required validate-email" type="text" name="EMAIL" placeholder="Enter your email" />
+                                        </div>
+                                         <div class="col-md-12 text-center" >
+                                            <button type="submit" style="width:20%;"  class="btn btn--primary">Submit</button>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            
+                                            <span>click "submit" indicate agreement to our
+                                                <a href="#" style="color:#f7941d;">terms and conditions</a>
+                                            </span>
+                                        </div>
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                            <input type="text" name="b_77142ece814d3cff52058a51f_f300c9cce8" tabindex="-1" value="">
+                                        </div>
+                                    </form>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>

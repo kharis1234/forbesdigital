@@ -102,11 +102,11 @@ class SiteController extends Controller
 	
 	public function actionTentangkami()
     {
-        $halamanstatis=Halamanstatis::find()->where(['IN', 'id_halaman', [64,66]])->all();
+       // $halamanstatis=Halamanstatis::find()->where(['IN', 'id_halaman', [64,66]])->all();
 
 
-        return $this->render('tentangkami', ['halamanstatis' => $halamanstatis]);
-
+        //return $this->render('tentangkami', ['halamanstatis' => $halamanstatis]);
+		echo 'tentang kami';
     }
 	
 	public function actionDaftarharga()

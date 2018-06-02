@@ -7,10 +7,11 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use frontend\assets\AppAsset;
+use frontend\assets\FrontEndAsset;
+
 use common\widgets\Alert;
 
-AppAsset::register($this);
+FrontEndAsset::register($this);
 ?>
 <?php
 $identitas = \common\models\Identitas::find() ->where(['id_identitas' =>1]) ->one();
@@ -20,14 +21,14 @@ $identitas = \common\models\Identitas::find() ->where(['id_identitas' =>1]) ->on
 <html lang="<?= Yii::$app->language ?>">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109265686-2"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109265686-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-106051611-1');
-</script>
+</script> -->
 
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,53 +52,25 @@ $identitas = \common\models\Identitas::find() ->where(['id_identitas' =>1]) ->on
     <meta name="spiders" content="all">
     <meta name="google-site-verification" content="3dFNnpeNY0GQH6sGrAPtS0c6HyhB3qq3gypcgFy-R1w" />
     <?php $this->head() ?>
+   
 </head>
-<body>
+<body class="" data-smooth-scroll-offset="64">
 <?php $this->beginBody() ?>
 
-<div class="wrap">
-    <?php
-  /*   NavBar::begin([
-        'brandLabel' => 'My Company',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            . '</li>';
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end(); */
-    ?>
 
-    <div class="">
-        
         <?= Alert::widget() ?>
-		<?=$this->render('header') ?>
-        <?= $content ?>
-		<?=$this->render('footer') ?>
-    </div>
-</div>
+		<?php echo $this->render('header') ?>	
+		<div class="main-container">
+			<?php echo $content ?>
+			<?php echo $this->render('sponsor') ?>
+			<?php echo $this->render('map') ?>
+			<?php echo $this->render('footer') ?>
+		</div>
 
+ <!--<div class="loader"></div>-->
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109265686-1"></script>
 <script>

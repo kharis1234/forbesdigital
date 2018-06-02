@@ -67,6 +67,7 @@ use yii\helpers\Url;
 						['label' => 'Reservasi', 'icon' => 'fa fa-file-code-o', 'url' => ['reservation/index'],],
                         ['label' => 'Galeri Foto', 'icon' => 'fa fa-file-code-o', 'url' => ['gallery/index'],],
                         ['label' => 'Layanan', 'icon' => 'fa fa-file-code-o', 'url' => ['layanan/index'],],
+						 ['label' => 'Footer', 'icon' => 'fa fa-file-code-o', 'url' => ['footer/index'],],
                         //['label' => 'Daftar Harga', 'icon' => 'fa fa-file-code-o', 'url' => ['daftarharga/index'],],
                        /* [
                             'label' => 'Pengguna',

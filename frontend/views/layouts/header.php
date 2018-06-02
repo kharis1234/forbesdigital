@@ -1,116 +1,99 @@
-<?php
-
-
-
-use yii\helpers\Url;
-
+<?php 
+use yii\helpers\Html;
 ?>
-<?php
-$identitas = \common\models\Identitas::find() ->where(['id_identitas' =>1]) ->one();
-?>
-<header id="header" class="header-no-border-bottom has-nav-bar" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 148, 'stickySetTop': '-148px', 'stickyChangeLogo': false}">
-				<div class="header-body">
-					<div class="header-top header-top-style-2">
-						<div class="container">
-							<p class="pull-left hidden-xs">
 
-								Memberikan Pelayanan yang maksimal
-							</p>
-							<p class="pull-right">
-								<i class="fa fa-map-marker"></i> <?=$identitas->alamat ?>
-							</p>
-						</div>
-					</div>
-					<div class="header-container container">
-						<div class="header-row">
-							<div class="header-column">
-                                <div class="header-logo">
-                                    <a href="<?=Url::to(['/']) ?>">
-                                        <img alt="Harapan Jaya Teknik AC" width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="<?=Url::to(['/']) ?>img/logo.png">
-                                    </a>
-                                </div>
+<a id="start"></a>
+ <div class="nav-container ">
+      <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+
+                            <a href="index.php">
+                                    <img class="logo logo-dark" alt="logo" src="<?php echo Yii::getAlias('@imageurl/logo-dark.png'); ?>" />
+                                   
+                                </a>
+
+                                            
+                           
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+
+           
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs " data-scroll-class='366px:pos-fixed'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                 
+                                <a href="index.php" id="home">
+                                    <img class="logo logo-dark" alt="logo" src="<?php echo Yii::getAlias('@imageurl/logo-dark.png'); ?>" />
+                                   
+                                </a>
                             </div>
-							<div class="header-column">
-								<ul class="header-extra-info hidden-xs">
-									<li>
-										<div class="feature-box feature-box-style-3">
-											<div class="feature-box-icon">
-												<i class="fa fa-phone"></i>
-											</div>
-											<div class="feature-box-info">
-												<h4 class="mb-none">
+                            <!--end module-->
+                        </div>
+                        <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+                            <div class="bar__module">
+                                 <ul class="menu-horizontal text-left">
+                                       <li class="">
+                                        <a href="#about" class="inner-link" data-title="Thisevent">ABOUT THIS EVENT</a>
+                                     
+                                    </li>
+                                     <li class="">
+                                    
+                                        <a href="#speakers" class="inner-link" data-title="Speakers">SPEAKERS</a>
+                                     
+                                    </li>
+                                      <li class="">
+                                        <a href="#agenda" class="inner-link" data-title="Agenda">AGENDA</a>
+                                        
+                                     
+                                    </li>
+                                   <!--  <li class="">
+                                        <span class="dropdown__trigger">DIGITAL CONFERENCE</span>
+                                     
+                                    </li> -->
+                                     <!--  <li class="">
+                                        <span class="dropdown__trigger">STARTUP COMPETITION</span>
+                                     
+                                    </li> -->
+                                     <li class="">
+                                        <a href="#sponsor" class="inner-link" data-title="Sponsor">SPONSOR & EXHIBITION</a>
+                                        
+                                     
+                                    </li>
+                                    <li class="">
+                                        <a href="#contact" class="inner-link" data-title="Contact">CONTACT</a>
+                                        
+                                     
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end module-->
+                            <div class="bar__module">
+                               
+                                <?php echo Html::a('<span class="btn__text">APPLY COMPETITION</span>', ['/registration'], ['class'=>'btn btn--sm type--uppercase']); ?>
+                                <?php echo Html::a('<span class="btn__text">RESERVATION</span>', ['/reservation'], ['class'=>'btn btn--sm btn--primary type--uppercase']); ?>
+                             
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
 
-                                                    <?=$identitas->tlp ?>
-
-                                                    </h4>
-												<p><small>Tlp/Wa</small></p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="feature-box feature-box-style-3">
-											<div class="feature-box-icon">
-												<i class="fa fa-envelope"></i>
-											</div>
-											<div class="feature-box-info">
-												<h4 class="mb-none">   <?=$identitas->email ?></h4>
-												<p><small>kirim pesan untuk info lebih lanjut</small></p>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="header-container header-nav header-nav-bar header-nav-bar-primary">
-						<div class="container">
-							<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
-								<i class="fa fa-bars"></i>
-							</button>
-							<div class="header-nav-main header-nav-main-light header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
-								<nav>
-									<ul class="nav nav-pills" id="mainNav">
-										<li class="">
-											<a href="<?=Url::to(['/']) ?>">
-												Home
-											</a>
-											
-											
-												
-										</li>
-										<li class="">
-											<a href="tentangkami">
-												Tentang Kami
-											</a>
-										</li>
-											<li class="">
-											<a href="daftarharga">
-												Daftar Harga
-											</a>
-										</li>
-										<li class="">
-											<a href="galeri">
-												Galeri
-											</a>
-											
-										</li>
-										<li class="">
-											<a href="artikel">
-												Blog
-											</a>
-										
-											
-										</li>
-										<li class="">
-											<a  href="hubungikami">
-												Hubungi Kami
-											</a>
-											
-										</li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
