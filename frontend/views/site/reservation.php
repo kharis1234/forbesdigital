@@ -38,7 +38,7 @@ use yii\helpers\Html;
                                                        <div class="col-md-3 col-3 ">
                                                              <span class="block">Male</span>
                                                             <div class="input-radio">
-                                                                <input type="radio" name="male" />
+                                                                <input type="radio" name="sex" value="male"/>
                                                                 <label></label>
                                                             </div> 
 
@@ -46,7 +46,7 @@ use yii\helpers\Html;
                                                        <div class="col-md-3 col-3 ">
                                                              <span class="block">Female</span>
                                                             <div class="input-radio">
-                                                                <input type="radio" name="female" />
+                                                                <input type="radio" name="sex" value="female"/>
                                                                 <label></label>
                                                             </div>
                                                         </div>

@@ -142,22 +142,22 @@ use yii\helpers\Html;
                                                         </div>
                                                        <div class="col-md-4 col-6 ">
                                                              <span class="block">Mr</span>
-                                                            <div class="input-checkbox">
-                                                                <input type="checkbox" name="mr" />
+                                                            <div class="input-radio">
+                                                                <input type="radio" name="title" value="mr"/>
                                                                 <label></label>
                                                             </div>
                                                         </div>
                                                        <div class="col-md-4 col-6 ">
                                                             <span class="block">Ms</span>
-                                                            <div class="input-checkbox">
-                                                                <input type="checkbox" name="ms" />
+                                                            <div class="input-radio">
+                                                                <input type="radio" name="title" value="ms"/>
                                                                 <label></label>
                                                             </div>
                                                         </div>
                                                       <div class="col-md-4 col-6 ">
                                                             <span class="block">Mrs</span>
-                                                            <div class="input-checkbox">
-                                                                <input type="checkbox" name="mrs" />
+                                                            <div class="input-radio">
+                                                                <input type="radio" name="title" value="mrs"/>
                                                                 <label></label>
                                                             </div>
                                                         </div>
